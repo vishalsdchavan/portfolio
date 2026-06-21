@@ -90,16 +90,16 @@
     });
   }
 
-  /* ---------------- Collapse mobile nav on link click ---------------- */
-  const navMenu = document.getElementById('navMenu');
-  navLinks.forEach(link => {
-    link.addEventListener('click', function () {
-      if (navMenu && navMenu.classList.contains('show')) {
-        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navMenu);
-        bsCollapse.hide();
-      }
+  /* ---------------- Close mobile "More" offcanvas on link click ---------------- */
+  const moreMenuEl = document.getElementById('moreMenu');
+  if (moreMenuEl) {
+    moreMenuEl.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function () {
+        const bsOffcanvas = bootstrap.Offcanvas.getInstance(moreMenuEl);
+        if (bsOffcanvas) bsOffcanvas.hide();
+      });
     });
-  });
+  }
 
   /* ---------------- Combined scroll listener (throttled via rAF) ---------------- */
   let scrollTicking = false;

@@ -63,6 +63,10 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 991.98px) {
+  body { padding-bottom: 64px; }
+}
+
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   font-weight: 800;
@@ -137,7 +141,7 @@ input:focus-visible {
   flex-shrink: 0;
 }
 
-/* ---------- Mobile Top Bar ---------- */
+/* ---------- Mobile Top Bar (brand + theme toggle only) ---------- */
 .topbar {
   background: rgba(11,18,32,0.85);
   backdrop-filter: blur(14px) saturate(140%);
@@ -156,7 +160,7 @@ input:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 18px;
+  padding: 12px 16px;
 }
 .topbar-brand {
   display: flex;
@@ -165,31 +169,105 @@ input:focus-visible {
   font-family: var(--font-mono);
   font-weight: 700;
   color: var(--text);
+  min-width: 0;
 }
-.topbar .brand-text { font-size: 0.96rem; }
-.topbar-toggler {
-  width: 38px; height: 38px;
-  border-radius: 9px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text);
-  display: flex; align-items: center; justify-content: center;
+.topbar .brand-text {
+  font-size: 0.92rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.topbar-toggler:focus { box-shadow: 0 0 0 2px var(--accent); }
 
-.topbar-nav {
+/* ---------- Mobile Bottom Icon Nav ---------- */
+.bottombar {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 1050;
+  background: rgba(11,18,32,0.92);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border-top: 1px solid var(--border);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  transition: background var(--transition), border-color var(--transition);
+}
+[data-theme="light"] .bottombar { background: rgba(255,255,255,0.95); }
+
+.bottombar-nav {
   list-style: none;
   margin: 0;
-  padding: 6px 14px 16px;
-  background: var(--surface);
-  border-top: 1px solid var(--border);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
-.topbar-nav .nav-link {
-  display: block;
-  padding: 11px 8px !important;
+
+.bottombar-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--text-faint) !important;
+  font-family: var(--font-display);
+  font-size: 0.66rem;
+  font-weight: 600;
+  padding: 9px 2px 8px;
+  transition: color var(--transition);
+}
+.bottombar-link i { font-size: 1.05rem; line-height: 1; }
+.bottombar-link span { line-height: 1; }
+.bottombar-link:hover,
+.bottombar-link:focus-visible { color: var(--text) !important; }
+.bottombar-link.active { color: var(--accent) !important; }
+
+/* ---------- Mobile "More" offcanvas ---------- */
+.mobile-more-menu {
+  background: var(--surface);
+  color: var(--text);
+  border-top: 1px solid var(--border);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  max-height: 70vh;
+}
+.mobile-more-menu .offcanvas-header { border-bottom: 1px solid var(--border); }
+.mobile-more-menu .offcanvas-title { font-size: 1.05rem; }
+
+.more-menu-list { list-style: none; margin: 0 0 18px; padding: 0; }
+.more-menu-list .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text) !important;
+  font-weight: 500;
+  font-size: 0.96rem;
+  padding: 13px 6px;
   border-bottom: 1px solid var(--border);
 }
-.topbar-theme-row { padding-top: 12px; display: flex; justify-content: flex-start; }
+.more-menu-list .nav-link i {
+  width: 22px;
+  color: var(--accent);
+  text-align: center;
+  flex-shrink: 0;
+}
+.more-menu-list li:last-child .nav-link { border-bottom: none; }
+
+.more-menu-socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.more-menu-socials a {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-muted);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.95rem;
+  transition: color var(--transition), border-color var(--transition);
+}
+.more-menu-socials a:hover { color: var(--accent); border-color: var(--accent); }
 
 /* ---------- Fixed Sidebar (desktop) ---------- */
 .sidebar {
@@ -916,16 +994,54 @@ input:focus-visible {
 }
 
 @media (max-width: 767.98px) {
-  .section { padding: 70px 0; }
-  .hero-section { padding: 100px 0 50px; min-height: auto; }
+  .section { padding: 56px 0; }
+  .section-title { margin-bottom: 8px; }
+  .section-subtitle { font-size: 0.95rem; }
+
+  .hero-section { padding: 96px 0 40px; min-height: auto; }
+  .hero-summary { font-size: 0.98rem; }
+  .hero-actions { gap: 10px; }
+  .hero-actions .btn { flex: 1 1 calc(50% - 5px); justify-content: center; font-size: 0.86rem; padding: 11px 14px; }
+
   .about-stats { grid-template-columns: 1fr 1fr; }
-  .hero-actions .btn { flex: 1 1 calc(50% - 6px); justify-content: center; }
+
+  .skill-card { padding: 22px 18px; }
+
+  .timeline-card { padding: 22px; }
+  .timeline-card-head { gap: 8px; }
+  .timeline-card-head h3 { font-size: 1.12rem; }
+
+  .project-card { padding: 22px; }
+
+  .arch-card-img { height: 170px; font-size: 2.5rem; }
+
+  .footer-inner { justify-content: center; text-align: center; }
 }
 
 @media (max-width: 575.98px) {
   .hero-actions .btn { flex: 1 1 100%; }
   .timeline { padding-left: 26px; }
   .timeline-marker { left: -40px; width: 28px; height: 28px; font-size: 0.74rem; }
-  .timeline-card { padding: 20px; }
+  .timeline-card { padding: 18px; }
+  .timeline-card-head { flex-direction: column; align-items: flex-start; }
+  .timeline-date { font-size: 0.74rem; }
+
+  .skill-card-head h3 { font-size: 0.98rem; }
+
+  .contact-card { padding: 22px 14px; }
+
+  .modal-dialog { margin: 12px; }
 }
+
+/* ---------- Mobile nav layout (topbar + bottombar) ---------- */
+@media (max-width: 991.98px) {
+  .topbar-inner { padding: 10px 14px; }
+
+  .bottombar-link span { font-size: 0.62rem; }
+
+  /* Keep bottombar above Bootstrap offcanvas/modal backdrops but below the sheet itself */
+  .mobile-more-menu { z-index: 1060; }
+}
+
+/* Hide desktop-only theme toggle area cleanly on small widths handled via d-lg-none/d-none d-lg-flex utility classes already in markup */
 

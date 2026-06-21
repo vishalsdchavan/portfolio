@@ -66,35 +66,53 @@
   <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
 
   <!-- ============ MOBILE TOP BAR (visible below lg) ============ -->
-  <nav class="topbar d-lg-none fixed-top" id="mainNavbar" aria-label="Primary navigation">
+  <nav class="topbar d-lg-none fixed-top" id="mainNavbar" aria-label="Site header">
     <div class="topbar-inner">
       <a class="topbar-brand" href="#hero">
         <span class="brand-mark">VC</span><span class="brand-text">Vishal Chavan</span>
       </a>
-      <button class="topbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode" aria-pressed="false">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
       </button>
     </div>
-    <div class="collapse" id="navMenu">
-      <ul class="topbar-nav">
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#skills">Skills</a></li>
-        <li><a class="nav-link" href="#experience">Experience</a></li>
-        <li><a class="nav-link" href="#projects">Personal Projects</a></li>
-        <li><a class="nav-link" href="#architecture">Architecture</a></li>
-        <li><a class="nav-link" href="#certifications">Certifications</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-        <li><a class="nav-link" href="assets/Vishal_Chavan_Resume.pdf" download>Resume</a></li>
-        <li class="topbar-theme-row">
-          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode" aria-pressed="false">
-            <i class="fa-solid fa-sun"></i>
-            <i class="fa-solid fa-moon"></i>
-          </button>
-        </li>
-      </ul>
-    </div>
   </nav>
+
+  <!-- ============ MOBILE BOTTOM ICON NAV (visible below lg) ============ -->
+  <nav class="bottombar d-lg-none" aria-label="Primary navigation">
+    <ul class="bottombar-nav">
+      <li><a class="bottombar-link nav-link" href="#about"><i class="fa-solid fa-user"></i><span>About</span></a></li>
+      <li><a class="bottombar-link nav-link" href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a></li>
+      <li><a class="bottombar-link nav-link" href="#experience"><i class="fa-solid fa-briefcase"></i><span>Work</span></a></li>
+      <li><a class="bottombar-link nav-link" href="#projects"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a></li>
+      <li>
+        <button class="bottombar-link bottombar-more" type="button" data-bs-toggle="offcanvas" data-bs-target="#moreMenu" aria-controls="moreMenu">
+          <i class="fa-solid fa-ellipsis"></i><span>More</span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ============ MOBILE "MORE" OFFCANVAS ============ -->
+  <div class="offcanvas offcanvas-bottom mobile-more-menu" tabindex="-1" id="moreMenu" aria-labelledby="moreMenuLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title" id="moreMenuLabel">More</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="more-menu-list">
+        <li><a class="nav-link" href="#architecture"><i class="fa-solid fa-diagram-project"></i><span>Architecture</span></a></li>
+        <li><a class="nav-link" href="#certifications"><i class="fa-solid fa-certificate"></i><span>Certifications</span></a></li>
+        <li><a class="nav-link" href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a></li>
+        <li><a class="nav-link" href="assets/Vishal_Chavan_Resume.pdf" download><i class="fa-solid fa-file-arrow-down"></i><span>Resume</span></a></li>
+      </ul>
+      <div class="more-menu-socials">
+        <a href="https://linkedin.com/in/vishal-chavan-3ba356228" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:vishalsdchavan@gmail.com" aria-label="Send email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
 
   <!-- ============ FIXED SIDEBAR (visible lg and up) ============ -->
   <aside class="sidebar d-none d-lg-flex" aria-label="Primary navigation">
@@ -111,7 +129,6 @@
         <li><a class="nav-link" href="#skills"><span>Skills</span></a></li>
         <li><a class="nav-link" href="#experience"><span>Experience</span></a></li>
         <li><a class="nav-link" href="#projects"><span> Personal Projects</span></a></li>
-        <!-- <li><a class="nav-link" href="#architecture"><span>Architecture</span></a></li> -->
         <li><a class="nav-link" href="#certifications"><span>Certifications</span></a></li>
         <li><a class="nav-link" href="#contact"><span>Contact</span></a></li>
       </ul>
@@ -693,60 +710,6 @@
       </div>
     </section>
 
-    <!-- ============ ARCHITECTURE GALLERY ============ -->
-    <section id="architecture" class="section" aria-labelledby="architecture-heading">
-      <div class="container">
-        <p class="section-eyebrow" data-aos>// Architecture</p>
-        <h2 class="section-title" id="architecture-heading" data-aos>Architecture gallery</h2>
-        <p class="section-subtitle" data-aos>From a monolithic core banking system to an event-driven microservices design.</p>
-
-        <div class="row g-4 mt-4">
-          <div class="col-md-6" data-aos>
-            <div class="arch-card" data-bs-toggle="modal" data-bs-target="#archModal" data-arch="monolith" role="button" tabindex="0">
-              <div class="arch-card-img">
-                <i class="fa-solid fa-cubes"></i>
-                <span class="arch-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
-              </div>
-              <div class="arch-card-body">
-                <h3>Current Monolithic Architecture</h3>
-                <p>The legacy core banking system: a single deployable unit handling customers, accounts,
-                  payments, and reporting — simple to run, but difficult to scale and release independently.</p>
-                <span class="arch-link">View larger diagram <i class="fa-solid fa-arrow-right"></i></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos data-aos-delay="50">
-            <div class="arch-card" data-bs-toggle="modal" data-bs-target="#archModal" data-arch="microservices" role="button" tabindex="0">
-              <div class="arch-card-img">
-                <i class="fa-solid fa-diagram-project"></i>
-                <span class="arch-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
-              </div>
-              <div class="arch-card-body">
-                <h3>Target Microservices Architecture</h3>
-                <p>The proposed design: an API Gateway routing to independent Auth, Account, Payment, Loan,
-                  and Notification services, communicating asynchronously over RabbitMQ.</p>
-                <span class="arch-link">View larger diagram <i class="fa-solid fa-arrow-right"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Architecture Modal -->
-    <div class="modal fade" id="archModal" tabindex="-1" aria-labelledby="archModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="archModalLabel">Architecture Diagram</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body" id="archModalBody">
-            <!-- injected by JS -->
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- ============ CERTIFICATIONS ============ -->
     <section id="certifications" class="section section-alt" aria-labelledby="cert-heading">
