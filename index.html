@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal Chavan | Full Stack Engineer</title>
+  <meta name="description" content="Vishal Chavan — Python Full Stack Engineer with 4.4+ years building scalable banking and fintech systems using Python, Django, FastAPI, AWS, Docker, Oracle, RabbitMQ and Redis.">
+  <meta name="keywords" content="Vishal Chavan, Python Full Stack Engineer, Django Developer, FastAPI, Banking Software Engineer, REST API Developer, AWS, Docker, Oracle, RabbitMQ, Redis, Pune">
+  <meta name="author" content="Vishal Chavan">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vishal Chavan | Python Full Stack Engineer">
+  <meta property="og:description" content="Python Full Stack Engineer specializing in banking platforms, REST APIs, AWS, Docker, Oracle, RabbitMQ and Redis.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vishalchavan.github.io/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vishal Chavan | Python Full Stack Engineer">
+  <meta name="twitter:description" content="Python Full Stack Engineer specializing in banking platforms, REST APIs, AWS, Docker, Oracle, RabbitMQ and Redis.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%230B1220%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 text-anchor=%22middle%22 fill=%22%2300D9A3%22 font-family=%22monospace%22>V</text></svg>">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vishal Chavan",
+    "jobTitle": "Full Stack Engineer",
+    "url": "https://vishalchavan.github.io/",
+    "email": "mailto:vishalsdchavan@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "India"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/vishal-chavan-3ba356228",
+      "https://github.com/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- ============ MOBILE TOP BAR (visible below lg) ============ -->
+  <nav class="topbar d-lg-none fixed-top" id="mainNavbar" aria-label="Primary navigation">
+    <div class="topbar-inner">
+      <a class="topbar-brand" href="#hero">
+        <span class="brand-mark">VC</span><span class="brand-text">Vishal Chavan</span>
+      </a>
+      <button class="topbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div class="collapse" id="navMenu">
+      <ul class="topbar-nav">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#projects">Personal Projects</a></li>
+        <li><a class="nav-link" href="#architecture">Architecture</a></li>
+        <li><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="assets/Vishal_Chavan_Resume.pdf" download>Resume</a></li>
+        <li class="topbar-theme-row">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light mode" aria-pressed="false">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ FIXED SIDEBAR (visible lg and up) ============ -->
+  <aside class="sidebar d-none d-lg-flex" aria-label="Primary navigation">
+    <a href="#hero" class="sidebar-avatar-link" aria-label="Vishal Chavan — back to top">
+      <div class="sidebar-avatar"><i class="fa-solid fa-terminal">
+      </i></div>
+    </a>
+    <h1 class="sidebar-name">Vishal Chavan</h1>
+    <p class="sidebar-role">Full Stack Engineer</p>
+
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a class="nav-link" href="#about"><span>About</span></a></li>
+        <li><a class="nav-link" href="#skills"><span>Skills</span></a></li>
+        <li><a class="nav-link" href="#experience"><span>Experience</span></a></li>
+        <li><a class="nav-link" href="#projects"><span> Personal Projects</span></a></li>
+        <!-- <li><a class="nav-link" href="#architecture"><span>Architecture</span></a></li> -->
+        <li><a class="nav-link" href="#certifications"><span>Certifications</span></a></li>
+        <li><a class="nav-link" href="#contact"><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-socials">
+      <a href="https://linkedin.com/in/vishal-chavan-3ba356228" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:vishalsdchavan@gmail.com" aria-label="Send email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+    <a href="assets/Vishal_Chavan_Resume.pdf" class="sidebar-resume-link" download>
+      <i class="fa-solid fa-download"></i> Resume
+    </a>
+
+    <button class="theme-toggle sidebar-theme-toggle" id="themeToggleDesktop" type="button" aria-label="Toggle dark and light mode" aria-pressed="false">
+      <i class="fa-solid fa-sun"></i>
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </aside>
+
+  <main id="main-content" class="has-sidebar">
+
+    <!-- ============ HERO ============ -->
+    <header id="hero" class="hero-section" aria-label="Introduction">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-overlay"></div>
+        <div class="glow glow-a"></div>
+        <div class="glow glow-b"></div>
+      </div>
+      <div class="container hero-container">
+        <div class="row align-items-center">
+          <div class="col-lg-10" data-aos>
+            <p class="hero-eyebrow"><span class="status-dot" aria-hidden="true"></span>Available for Full stack engineering roles</p>
+            <p class="hero-name">Vishal Chavan</p>
+            <h2 class="hero-title">
+              <span class="typed-text" id="typedTitle"></span><span class="cursor" aria-hidden="true">&nbsp;</span>
+            </h2>
+            <p class="hero-summary"> <strong> Full Stack Developer | Backend Developer | Python | JavaScript | REST API Development | Fintech | Core Banking | Open Banking |Scalalble Applications | AWS | Certified Scrum Master | RabbitMQ | System Design | Oracle | Redis</strong> </p>
+            <p class="hero-summary">
+              Experienced Full Stack & Backend Developer with 4.4+ years building secure, high-throughput systems for
+              <strong>Banking and Fintech platforms</strong>. Specialized in Banking Applications. Also worked on E-commerce and Health care domain.
+            </p>
+            <div class="hero-actions">
+              <a href="assets/Vishal_Chavan_Resume.pdf" class="btn btn-accent" download>
+                <i class="fa-solid fa-download"></i> Download Resume
+              </a>
+              <a href="https://linkedin.com/in/vishal-chavan-3ba356228" class="btn btn-outline-line" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+              </a>
+              <a href="https://github.com/" class="btn btn-outline-line" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="#contact" class="btn btn-ghost">
+                <i class="fa-solid fa-paper-plane"></i> Contact Me
+              </a>
+            </div>
+          </div>
+          <!-- <div class="col-lg-5 d-none d-lg-block" data-aos data-aos-delay="150">
+            <div class="hero-terminal" role="img" aria-label="Terminal window showing a sample API status check">
+              <div class="terminal-bar">
+                <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                <span class="terminal-title">vishal@backend:~</span>
+              </div>
+              <div class="terminal-body">
+                <p><span class="prompt">$</span> curl -s /api/v1/health</p>
+                <p class="out">{ "status": "ok", "service": "core-banking-api" }</p>
+                <p><span class="prompt">$</span> python manage.py runserver</p>
+                <p class="out">Starting development server at <span class="hl">http://127.0.0.1:8000/</span></p>
+                <p class="out">Watching for changes&nbsp;<span class="blink">▍</span></p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </header>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <p class="section-eyebrow" data-aos>// About</p>
+        <div class="row mt-4">
+          <div class="col-lg-12" data-aos>
+            <p class="about-lede">
+              Full Stack Engineer & Backend Developer with 4.5+ years of experience designing and building scalable, cloud-native, high-performance applications in Banking and E-commerce domains.
+            </p>  
+            <p>I Specialize in <strong> (Django, FastAPI) and React.js</strong>, with strong expertise in <strong> RESTful API development and Microservices Architecture</strong>. I have hands-on experience in building systems that handle high-volume, real-time financial transactions (SWIFT, SEPA), ensuring performance, security, and reliability at scale.
+            <p>I have a proven track record of improving system performance, designing fault-tolerant and highly available systems, and optimizing Oracle databases for production workloads.
+              Across the stack
+            </p>
+            <p>
+              I developed responsive frontend interfaces using HTML, CSS, JavaScript, Bootstrap, and React,  while building robust backend services using Python frameworks.
+              I also bring strong experience in AWS Cloud Architecture, Docker, CI/CD automation, Redis, and RabbitMQ, enabling scalable and cloud-ready deployments in enterprise environments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section section-alt" aria-labelledby="skills-heading">
+      <div class="container">
+        <p class="section-eyebrow" data-aos>// Skills</p>
+        <h2 class="section-title" id="skills-heading" data-aos>Technical Skills</h2>
+        <p class="section-subtitle" data-aos>Tools and technologies I use to design, build, and operate backend systems.</p>
+
+        <div class="row g-4 mt-4">
+
+          <div class="col-md-6 col-lg-4" data-aos>
+            <div class="skill-card">
+              <div class="skill-card-head"><i class="fa-solid fa-server"></i><h3>Backend</h3></div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Python</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Django / Django REST Framework</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Bottle</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>FastAPI</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>REST API Design & Development</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos data-aos-delay="50">
+            <div class="skill-card">
+              <div class="skill-card-head"><i class="fa-solid fa-display"></i><h3>Frontend</h3></div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>HTML5</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>CSS3</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Bootstrap</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>JavaScript</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>React</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Jinja2Template</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos data-aos-delay="100">
+            <div class="skill-card">
+              <div class="skill-card-head"><i class="fa-solid fa-database"></i><h3>Database</h3></div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Oracle</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>SQL server</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Mysql</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>PostgreSQL</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Redis</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos>
+            <div class="skill-card">
+              <div class="skill-card-head"><i class="fa-solid fa-cloud"></i><h3>Cloud</h3></div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>AWS</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos data-aos-delay="50">
+            <div class="skill-card">
+              <div class="skill-card-head"><i class="fa-solid fa-gears"></i><h3>DevOps</h3></div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Docker</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>CI/CD (Jenkins)</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Linux</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Git</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos data-aos-delay="100">
+            <div class="skill-card">
+              <div class="skill-card-head"><i class="fa-solid fa-network-wired"></i><h3>Messaging &amp; Caching</h3></div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>RabbitMQ</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Redis</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Event-Driven Design</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos data-aos-delay="100">
+            <div class="skill-card">
+              <div class="skill-card-head"><i class="fa-solid fa-network-wired"></i><h3>Testing and Tools</h3></div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Pytest/Unit testing</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Selenium</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Postman</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Manual Functional testing</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Black box testing</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>White box testing</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos data-aos-delay="100">
+            <div class="skill-card">
+              <div class="skill-card-head"><i class="fa-solid fa-network-wired"></i><h3>Code Review</h3></div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>SonarQube</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Pylint</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Jslint</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Bandit</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos data-aos-delay="100">
+            <div class="skill-card">
+              <div class="skill-card-head"><i class="fa-solid fa-network-wired"></i><h3>Others</h3></div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>System Design</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Monolithic Architecture</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Microservices</span><span class="skill-pct"></span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="container">
+        <p class="section-eyebrow" data-aos>// Experience</p>
+        <h2 class="section-title" id="experience-heading" data-aos>Work experience</h2>
+        <p class="section-subtitle" data-aos>Building and modernizing backend systems for banking and e-commerce platforms.</p>
+
+        <div class="timeline mt-5">
+
+          <div class="timeline-item" data-aos>
+            <div class="timeline-marker" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <div>
+                  <h3>Full Stack Developer</h3>
+                  <p class="timeline-org">Tieto India Pvt. Ltd. · Pune</p>
+                </div>
+                <span class="timeline-date">Dec 2022 – Present</span>
+              </div>
+              <!-- Open banking -->
+              <h4 class="timeline-subtitle">Open Banking API Platform</h4>
+              <p class="timeline-stack"><strong>Stack:</strong> Python, Bottle, REST APIs, Oracle, Docker, Jenkins, React, HTML5, CSS, Javascriptm OAuth 2.0, JWT, Redis, RabbitMQ, Docker</p>
+              <ul class="timeline-list">
+                <li><i class="fa-solid fa-check"></i>Designed and developed secure Open Banking APIs enabling third-party providers (TPPs) to access customer account and payment information with customer consent.</li>
+                <li><i class="fa-solid fa-check"></i>Implemented OAuth 2.0 Authorization Code Flow and JWT-based authentication to ensure secure API access and regulatory compliance.</li>
+                <li><i class="fa-solid fa-check"></i>Developed Account Information Services (AIS) and Payment Initiation Services (PIS) APIs following Open Banking principles.</li>
+                <li><i class="fa-solid fa-check"></i>Built consent management workflows allowing customers to authorize, review, and revoke third-party access to banking data.</li>
+              </ul>
+
+              <h4 class="timeline-subtitle">Core Banking Migration</h4>
+              <p class="timeline-stack"><strong>Stack:</strong> Python, Docker, Jenkins, RabbitMQ, Redis, HTML5, CSS, Javascript, React</p>
+              <ul class="timeline-list">
+                <li><i class="fa-solid fa-check"></i>Led Core banking migration, refactored legacy modules</li>
+                <li><i class="fa-solid fa-check"></i><strong>Containerized</strong> applications using Docker for consistent, repeatable deployment environments</li>
+                <li><i class="fa-solid fa-check"></i>Implemented <strong>CI/CD pipelines</strong> with Jenkins, reducing deployment time by <strong>40%</strong></li>
+                <li><i class="fa-solid fa-check"></i>Introduced <strong>Redis caching</strong> and <strong>RabbitMQ</strong> messaging to improve throughput and decouple services</li>
+                <li><i class="fa-solid fa-check"></i>Provided ongoing <strong>production support</strong>, troubleshooting and resolving live system issues</li>
+              </ul>
+
+              <h4 class="timeline-subtitle">Core Banking Platform — Real-Time Payments System</h4>
+              <p class="timeline-stack"><strong>Stack:</strong> Python, Django, Bottle, REST APIs, Oracle, Docker, Jenkins, React, HTML5, CSS, Javascript</p>
+              <ul class="timeline-list">
+                <li><i class="fa-solid fa-check"></i>Designed and developed high-performance <strong>RESTful APIs</strong> for real-time financial transactions with low latency and high availability</li>
+                <li><i class="fa-solid fa-check"></i>Processed thousands of transactions daily supporting <strong>SWIFT and SEPA</strong> payment systems</li>
+                <li><i class="fa-solid fa-check"></i>Optimized complex <strong>Oracle SQL</strong> queries and indexing, reducing API response time by <strong>30%+</strong></li>
+                <li><i class="fa-solid fa-check"></i>Implemented secure API authentication using <strong>JWT</strong> and industry-standard security practices</li>
+                <li><i class="fa-solid fa-check"></i>Contributed to distributed systems ensuring fault tolerance and scalability under banking compliance standards</li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span class="tag">Banking Applications</span>
+                <span class="tag">REST API Development</span>
+                <span class="tag">Oracle DB Integration</span>
+                <span class="tag">Docker Containerization</span>
+                <span class="tag">Redis Caching</span>
+                <span class="tag">RabbitMQ Messaging</span>
+                <span class="tag">Production Support</span>
+                <span class="tag">Performance Optimization</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos>
+            <div class="timeline-marker" aria-hidden="true"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="timeline-card">
+              <div class="timeline-card-head">
+                <div>
+                  <h3>Software Engineer</h3>
+                  <p class="timeline-org">Spanidea Systems</p>
+                </div>
+                <span class="timeline-date">Dec 2021 – 2022</span>
+              </div>
+
+              <h4 class="timeline-subtitle">E-Commerce Web Application</h4>
+              <p class="timeline-stack"><strong>Stack:</strong> Python, Django, Oracle, REST APIs, Pandas</p>
+              <ul class="timeline-list">
+                <li><i class="fa-solid fa-check"></i>Developed backend modules for <strong>product catalog, order management, and reporting</strong> systems</li>
+                <li><i class="fa-solid fa-check"></i>Built scalable <strong>REST APIs</strong> for seamless frontend–backend integration</li>
+                <li><i class="fa-solid fa-check"></i>Improved application performance through debugging and query optimization</li>
+                <li><i class="fa-solid fa-check"></i>Generated business insights using Python (<strong>Pandas</strong>)</li>
+                <li><i class="fa-solid fa-check"></i>Managed version control workflows using <strong>Git</strong> and SVN</li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span class="tag">REST API Development</span>
+                <span class="tag">Oracle DB Integration</span>
+                <span class="tag">Reporting Systems</span>
+                <span class="tag">Performance Optimization</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
+      <div class="container">
+        <p class="section-eyebrow" data-aos>// Personal Projects</p>
+        <h2 class="section-title" id="projects-heading" data-aos>Featured projects</h2>
+        <p class="section-subtitle" data-aos>A selection of backend systems I've designed, built, and shipped.</p>
+
+        <div class="row g-4 mt-4">
+
+          <!-- Project 1 -->
+          <div class="col-lg-6" data-aos>
+            <div class="project-card">
+              <div class="project-card-top">
+                <span class="project-icon"><i class="fa-solid fa-building-columns"></i></span>
+                <span class="project-badge">Banking</span>
+              </div>
+              <h3>Banking Application</h3>
+              <p>Developed and maintained a core banking application using <strong>Python (Bottle)</strong>,
+                <strong>Oracle Database</strong>, <strong>Redis</strong>, <strong>RabbitMQ</strong>,
+                <strong>Selenium</strong>, and <strong>Docker</strong> — supporting day-to-day banking
+                operations with reliable, auditable workflows.</p>
+              <ul class="project-feature-list">
+                <li><i class="fa-solid fa-circle-check"></i>Customer Management</li>
+                <li><i class="fa-solid fa-circle-check"></i>Account Management</li>
+                <li><i class="fa-solid fa-circle-check"></i>Payment Processing</li>
+                <li><i class="fa-solid fa-circle-check"></i>Reporting</li>
+                <li><i class="fa-solid fa-circle-check"></i>Authentication &amp; Authorization</li>
+              </ul>
+              <div class="project-stack">
+                <span class="tag">Python</span><span class="tag">Bottle</span><span class="tag">Oracle</span>
+                <span class="tag">Redis</span><span class="tag">RabbitMQ</span><span class="tag">Selenium</span><span class="tag">Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-6" data-aos data-aos-delay="50">
+            <div class="project-card">
+              <div class="project-card-top">
+                <span class="project-icon"><i class="fa-solid fa-diagram-project"></i></span>
+                <span class="project-badge">Architecture</span>
+              </div>
+              <h3>Banking Microservices Architecture Design</h3>
+              <p>Designed a target <strong>microservices architecture</strong> for a banking platform, breaking
+                a monolithic core into independently deployable services connected through event-driven
+                messaging.</p>
+              <div class="project-diagram-placeholder">
+                <i class="fa-solid fa-sitemap"></i>
+                <span>Architecture diagram — see Architecture Gallery below</span>
+              </div>
+              <ul class="project-feature-list">
+                <li><i class="fa-solid fa-circle-check"></i>API Gateway</li>
+                <li><i class="fa-solid fa-circle-check"></i>Auth Service</li>
+                <li><i class="fa-solid fa-circle-check"></i>Account Service</li>
+                <li><i class="fa-solid fa-circle-check"></i>Payment Service</li>
+                <li><i class="fa-solid fa-circle-check"></i>Loan Service</li>
+                <li><i class="fa-solid fa-circle-check"></i>Notification Service</li>
+                <li><i class="fa-solid fa-circle-check"></i>RabbitMQ Event-Driven Communication</li>
+              </ul>
+              <div class="project-stack">
+                <span class="tag">System Design</span><span class="tag">Microservices</span><span class="tag">API Gateway</span><span class="tag">RabbitMQ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-6" data-aos>
+            <div class="project-card">
+              <div class="project-card-top">
+                <span class="project-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                <span class="project-badge">Security</span>
+              </div>
+              <h3>API Security Project</h3>
+              <p>Hardened backend APIs against common attack vectors by implementing <strong>JWT
+                authentication</strong>, request validation, and secure access controls aligned with API
+                security best practices.</p>
+              <ul class="project-feature-list">
+                <li><i class="fa-solid fa-circle-check"></i>JWT Authentication</li>
+                <li><i class="fa-solid fa-circle-check"></i>API Security Best Practices</li>
+                <li><i class="fa-solid fa-circle-check"></i>Request Validation</li>
+                <li><i class="fa-solid fa-circle-check"></i>Secure Access Controls</li>
+              </ul>
+              <div class="project-stack">
+                <span class="tag">JWT</span><span class="tag">OAuth</span><span class="tag">REST APIs</span><span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-lg-6" data-aos data-aos-delay="50">
+            <div class="project-card">
+              <div class="project-card-top">
+                <span class="project-icon"><i class="fa-brands fa-docker"></i></span>
+                <span class="project-badge">DevOps</span>
+              </div>
+              <h3>Dockerized Python Application Deployment</h3>
+              <p>Containerized Python backend applications and deployed them using <strong>Docker</strong>,
+                standardizing environments across development, staging, and production.</p>
+              <ul class="project-feature-list">
+                <li><i class="fa-solid fa-circle-check"></i>Dockerfile &amp; image optimization</li>
+                <li><i class="fa-solid fa-circle-check"></i>Environment-consistent deployments</li>
+                <li><i class="fa-solid fa-circle-check"></i>CI/CD-driven build &amp; release</li>
+                <li><i class="fa-solid fa-circle-check"></i>Reduced deployment time by 40%</li>
+              </ul>
+              <div class="project-stack">
+                <span class="tag">Docker</span><span class="tag">Jenkins</span><span class="tag">CI/CD</span><span class="tag">Linux</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="col-lg-6" data-aos>
+            <div class="project-card">
+              <div class="project-card-top">
+                <span class="project-icon"><i class="fa-solid fa-bolt"></i></span>
+                <span class="project-badge">API</span>
+              </div>
+              <h3>Payment API System</h3>
+              <p>Built high-performance <strong>FastAPI</strong>-based REST APIs with JWT authentication,
+                designed to handle concurrent requests for financial transactions with fault tolerance.</p>
+              <ul class="project-feature-list">
+                <li><i class="fa-solid fa-circle-check"></i>FastAPI REST endpoints</li>
+                <li><i class="fa-solid fa-circle-check"></i>JWT-secured access</li>
+                <li><i class="fa-solid fa-circle-check"></i>Concurrent request handling</li>
+                <li><i class="fa-solid fa-circle-check"></i>Improved response time &amp; fault tolerance</li>
+              </ul>
+              <div class="project-stack">
+                <span class="tag">FastAPI</span><span class="tag">JWT</span><span class="tag">REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="col-lg-6" data-aos data-aos-delay="50">
+            <div class="project-card">
+              <div class="project-card-top">
+                <span class="project-icon"><i class="fa-solid fa-list-check"></i></span>
+                <span class="project-badge">Full Stack</span>
+              </div>
+              <h3>Task Management Application</h3>
+              <p>Built a full-stack task management application with <strong>Django</strong> on the backend,
+                implementing complete CRUD operations through REST APIs with an optimized data layer.</p>
+              <ul class="project-feature-list">
+                <li><i class="fa-solid fa-circle-check"></i>CRUD REST API endpoints</li>
+                <li><i class="fa-solid fa-circle-check"></i>Django backend architecture</li>
+                <li><i class="fa-solid fa-circle-check"></i>Optimized backend performance</li>
+              </ul>
+              <div class="project-stack">
+                <span class="tag">Django</span><span class="tag">REST APIs</span><span class="tag">SQL</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ARCHITECTURE GALLERY ============ -->
+    <section id="architecture" class="section" aria-labelledby="architecture-heading">
+      <div class="container">
+        <p class="section-eyebrow" data-aos>// Architecture</p>
+        <h2 class="section-title" id="architecture-heading" data-aos>Architecture gallery</h2>
+        <p class="section-subtitle" data-aos>From a monolithic core banking system to an event-driven microservices design.</p>
+
+        <div class="row g-4 mt-4">
+          <div class="col-md-6" data-aos>
+            <div class="arch-card" data-bs-toggle="modal" data-bs-target="#archModal" data-arch="monolith" role="button" tabindex="0">
+              <div class="arch-card-img">
+                <i class="fa-solid fa-cubes"></i>
+                <span class="arch-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+              </div>
+              <div class="arch-card-body">
+                <h3>Current Monolithic Architecture</h3>
+                <p>The legacy core banking system: a single deployable unit handling customers, accounts,
+                  payments, and reporting — simple to run, but difficult to scale and release independently.</p>
+                <span class="arch-link">View larger diagram <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos data-aos-delay="50">
+            <div class="arch-card" data-bs-toggle="modal" data-bs-target="#archModal" data-arch="microservices" role="button" tabindex="0">
+              <div class="arch-card-img">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span class="arch-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+              </div>
+              <div class="arch-card-body">
+                <h3>Target Microservices Architecture</h3>
+                <p>The proposed design: an API Gateway routing to independent Auth, Account, Payment, Loan,
+                  and Notification services, communicating asynchronously over RabbitMQ.</p>
+                <span class="arch-link">View larger diagram <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture Modal -->
+    <div class="modal fade" id="archModal" tabindex="-1" aria-labelledby="archModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="archModalLabel">Architecture Diagram</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="archModalBody">
+            <!-- injected by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications" class="section section-alt" aria-labelledby="cert-heading">
+      <div class="container">
+        <p class="section-eyebrow" data-aos>// Certifications</p>
+        <h2 class="section-title" id="cert-heading" data-aos>Certifications</h2>
+        <p class="section-subtitle" data-aos>Credentials reinforcing my cloud, database, and DevOps fundamentals.</p>
+
+        <div class="row g-4 mt-4">
+          <div class="col-6 col-lg-3" data-aos data-aos-delay="50">
+            <div class="cert-icon-card">
+              <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+              <h3>Python Certified</h3>
+              <p>Core Python &amp; advanced programming</p>
+              <span class="cert-status">Add credential ID</span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos data-aos-delay="50">
+            <div class="cert-card">
+              <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+              <h3>Certified Scrum master</h3>
+              <p>Scrum ceremoney</p>
+              <span class="cert-status">Add credential ID</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section id="resume" class="section resume-section" aria-labelledby="resume-heading">
+      <div class="container text-center">
+        <p class="section-eyebrow" data-aos>// Resume</p>
+        <h2 class="section-title" id="resume-heading" data-aos>Want the full picture?</h2>
+        <p class="section-subtitle mx-auto" data-aos>Download my complete resume for detailed experience, projects, and achievements.</p>
+        <a href="assets/Vishal_Chavan_Resume.pdf" class="btn btn-accent btn-lg resume-btn" download data-aos>
+          <i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
+      <div class="container">
+        <p class="section-eyebrow" data-aos>// Contact</p>
+        <h2 class="section-title" id="contact-heading" data-aos>Let's build something reliable</h2>
+        <!-- <p class="section-subtitle" data-aos>Open to backend engineering opportunities, freelance work, and technical conversations.</p> -->
+
+        <div class="row g-4 mt-4">
+          <div class="col-md-6 col-lg-3" data-aos>
+            <a class="contact-card" href="mailto:vishalsdchavan@gmail.com">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <h3>Email</h3>
+              <p>vishalsdchavan@gmail.com</p>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos data-aos-delay="50">
+            <a class="contact-card" href="tel:+919552020378">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <h3>Phone</h3>
+              <p>+91 95520 20378</p>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos>
+            <a class="contact-card" href="https://linkedin.com/in/vishal-chavan-3ba356228" target="_blank" rel="noopener noreferrer">
+              <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <h3>LinkedIn</h3>
+              <p>/in/vishal-chavan-3ba356228</p>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos data-aos-delay="50">
+            <a class="contact-card" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+              <h3>GitHub</h3>
+              <p>github.com/yourusername</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="location-strip mt-4" data-aos>
+          <i class="fa-solid fa-location-dot"></i> Pune, Maharashtra, India
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>&copy; 2026 Vishal Chavan. All rights reserved.</p>
+        <p class="footer-built">Built with HTML, Bootstrap and JavaScript</p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="/js/script.js"></script>
+</body>
+</html>
