@@ -118,7 +118,7 @@
 
   /* ---------------- Typed Hero Title ---------------- */
   const typedEl = document.getElementById('typedTitle');
-  const titles = ['Full Stack Developer','Python Backend Developer', 'Banking Systems Developer', 'REST API Architect'];
+  const titles = ['Full Stack Developer','Python Backend Developer', 'Banking Systems Developer'];
   let titleIndex = 0;
   let charIndex = 0;
   let deleting = false;
